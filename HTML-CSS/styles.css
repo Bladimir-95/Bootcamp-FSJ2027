@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(238, 233, 233);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ---- header ----*/
+.header {
+    background-color: white;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem; 
+}
+
+/* ---- navbar ----*/
+.header > .navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---- logo ----*/
+.header > .navbar > .logo{
+    font-size: 2.5rem;
+    color: rgb(243, 176, 53);
+    transition: 0.5s;
+}
+
+.header > .navbar > .logo:hover{
+    color: rgb(250, 164, 5);
+    text-shadow: #333 2px 2px 2px;
+    transition: 0.5s;
+}
+
+/* ---- nav-menu ----*/
+.header > .navbar > .nav-menu {
+    display: flex; 
+    list-style: none 
+}
+
+
+/* ---- nav-item ----*/
+.header .navbar .nav-menu .nav-item{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.header .navbar .nav-menu .nav-item:hover{
+    color: rgb(243, 176, 53);
+    transition: 0.5s;
+    text-shadow: #333 2px 2px 2px
+}
+
+/*---- container ----*/
+.container {
+    width: 90vw;
+    margin: 2rem auto;
+}
+
+/* ---- Main content ----*/
+.hero{
+    background-image: url('https://assets.unileversolutions.com/recipes-v2/247293.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0 0.3 2.5rem rgba(0, 0, 0, 0.1);
+    transition: 0.5;
+}
+
+.hero-content{
+
+}
+
+    .hero:hover{
+        box-shadow: 0 0rem 1.3rem rgba(243, 176, 53, 0.8);
+        transition: 0.5;
+    }
+
+    .hero h2{
+        font-size: 3.4rem;
+        text-shadow: rgb (243, 176, 53) 0.1rem 0.1rem 0.3rem;
+     }
+
+    .hero p{
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero a{
+        color: white;
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 3rem; 
+        background-color: rgb(243, 176, 53);
+        transition: 0.5;
+    }
+
+    .hero a:hover{
+        box-shadow: 0 0.2rem 1.3rem rgba(9, 9, 9, 02.5rem);
+        transition: 0.5;
+        font-size: 1.15rem 
+    }
+
+    .menu{
+        padding: 4rem 1rem;
+        text-align: center;
+    }
+
+    .menu > h3{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .menu .menu-items-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu .menu-items{
+        width: 30vw;
+        height: 40vh;
+        background-color: white;
+        border-radius: 1.5rem;
+        margin: 1rem;
+        padding: 2rem;
+        box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+    }
+
+    .menu .menu-items-container .menu-items img{
+        width: 100%;
+        max-height: 60%;
+        border-radius: 1rem;
+        box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.1);
+    }
+
+    .menu .menu-items-container .menu-items h4{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .menu .menu-items-container .menu-items p{
+        font-size: 1rem;
+        color: gray;
+    }
+    
+    .menu .menu-items:hover{
+        transform: translateY(-1rem);
+        transition: 0.5s;
+    }
+
+    /* ---- Reserva ----*/
+    .reserva{
+        background-color: lightgray;
+        justify-items: center;
+        padding: 4rem 1rem;
+    }
+
+    .reserva h5{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .reserva .form-reserva{
+        display: grid;
+        gap: 1rem;
+        background-color: white;
+        width: 35%;
+        height: 50vh;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .reserva .form-reserva input, 
+    .reserva .form-reserva textarea{
+        padding: 1rem;
+        border-radius: 0.8rem;
+        border: 0.05rem solid lightgray;
+        width: 100% !important;
+    }
+
+    .reserva .form-reserva button{
+        color: white;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        width: 50%;
+        margin: auto;
+        padding: 1rem 2rem;
+        border-radius: 3rem; 
+        background-color: rgb(243, 176, 53);
+        transition: 0.5s;
+    }
+
+    .reserva .form-reserva button:hover{
+        box-shadow: 0 0.2rem 1.3rem rgba(9, 9, 9, 02.5rem);
+        transition: 0.5s;
+        font-size: 1.15rem;
+    }
+
+
+    /* --- contacto ---*/
+    .contacto{
+        padding: 4rem 1rem;
+        text-align: center;
+        background: rgb(235,230,230);
+        background: linear-gradient(180deg, rgba(235,230,230,1) 80%, rgba(243,176,43,1) 100%);
+    }
+
+    .contacto h6{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .contacto ul{
+        list-style: none;
+        font-size: 1rem;
+        color: gray;
+    }
+     
+    .contacto li{
+        margin: 1rem;
+    }
+
+    .footer {
+        background-color: rgb(243, 176, 53);
+        text-align: center;
+        padding: 1rem;
+        color: white;
+        font-size: 1.1rem;
+    }
+
+     /* --- MediaQuerys ---*/
+
+     @media (max-width: 768px) {
+        .reserva .form-reserva{
+            width: 70%;
+        }
+
+        .menu .menu-items-container{
+            height: 35vh;
+        }
+
+     }
+
+     @media (max-width: 530px ) {
+        body{
+            width: 165%;
+        }
+
+        .hero{
+            width: 170%;
+            height: 50vh;
+            margin-left: -6.4rem;
+        }
+
+        .menu .menu-items-container .menu-items{
+            width: 100%;
+            height: 100%;
+            margin: 0.5rem;
+        }
+
+        .reserva .form-reserva button{
+            height: 7vh;
+            width: 70%;
+            font-size: 1.3rem;
+        }
+     }
